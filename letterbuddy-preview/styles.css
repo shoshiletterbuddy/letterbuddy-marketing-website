@@ -36,3 +36,33 @@ section { padding:98px 0; }.section-title { max-width:610px; margin-bottom:42px;
 .final { padding:82px 0; background:#f3eee3; text-align:center; }.final h2 { max-width:720px; margin:8px auto 16px; font-size:clamp(2.4rem,5vw,4.2rem); line-height:1.03; letter-spacing:-.06em; }.final p { max-width:590px; margin:0 auto 28px; color:var(--muted); font-size:1.08rem; }
 footer { padding:28px 0; color:var(--muted); font-size:.88rem; }
 @media (max-width:760px) { .nav-links { display:none; }.hero { grid-template-columns:1fr; padding-top:35px; gap:42px; }.tablet { margin:auto; }.cards, .learn-more, .dashboard-grid { grid-template-columns:1fr; }.benefits { grid-template-columns:1fr; }.tips { grid-template-columns:1fr; gap:26px; } section { padding:68px 0; } }
+
+.research-section { padding:0 0 98px; }
+.research-list { display:grid; gap:30px; }
+.research-item { display:grid; grid-template-columns:1fr 1fr; gap:42px; align-items:center; padding:30px; border:1px solid var(--line); border-radius:26px; background:#fff; }
+.research-item.reverse .research-visual { order:2; }
+.research-visual { position:relative; min-height:255px; overflow:hidden; border-radius:19px; background:#edf9f7; }
+.research-copy { max-width:470px; }
+.research-type { display:block; margin-bottom:9px; color:var(--teal-dark); font-size:.78rem; font-weight:900; letter-spacing:.08em; text-transform:uppercase; }
+.research-copy h3 { margin:0 0 12px; font-size:clamp(1.35rem,2vw,1.8rem); line-height:1.1; letter-spacing:-.04em; }
+.research-copy h3 a { color:var(--ink); text-decoration:none; }
+.research-copy h3 a:hover, .research-link:hover { text-decoration:underline; }
+.research-copy p { margin:0 0 16px; color:var(--muted); }
+.research-link { color:var(--teal-dark); font-weight:850; text-decoration:none; }
+.visual-letters { background:#f7eee0; }
+.paper-mark { position:absolute; left:18%; top:9%; color:var(--ink); font-family:Georgia,serif; font-size:9rem; font-style:italic; line-height:1; }
+.trace-line { position:absolute; left:20%; right:20%; bottom:24%; height:2px; border-top:3px dotted var(--peach); }
+.pencil-mark { position:absolute; right:17%; bottom:17%; color:var(--teal-dark); font-size:5rem; transform:rotate(-22deg); }
+.visual-fluency { display:flex; align-items:center; justify-content:center; gap:16px; background:#e7eff9; color:var(--ink); font-family:Georgia,serif; font-size:4.8rem; font-style:italic; }
+.visual-fluency i { width:13px; height:13px; border-radius:50%; background:var(--peach); }
+.visual-legibility { display:grid; grid-template-columns:44px 1fr; gap:14px; align-content:center; padding:38px; background:#f6f0e8; }
+.check-mark { grid-row:span 3; align-self:center; display:grid; place-items:center; width:44px; height:44px; border-radius:14px; background:var(--teal); color:#fff; font-size:1.7rem; font-weight:900; }
+.line-one,.line-two,.line-three { height:15px; border-radius:10px; background:#d8d0c2; }.line-one { width:90%; }.line-two { width:72%; }.line-three { width:82%; }
+.visual-skills { background:#fce9df; }
+.skill-dot { position:absolute; width:56px; height:56px; border-radius:50%; background:#fff; border:2px solid var(--peach); }.skill-dot.one { top:28%; left:18%; }.skill-dot.two { top:52%; left:43%; }.skill-dot.three { top:22%; right:17%; }
+.skill-path { position:absolute; top:49%; left:27%; width:52%; height:45px; border-top:3px dashed var(--teal); border-radius:50%; transform:rotate(-10deg); }
+.visual-guide { display:grid; place-items:center; align-content:center; gap:16px; background:#e9f6f4; }
+.guide-tab { padding:6px 10px; border-radius:7px; background:var(--sun); color:var(--ink); font-size:.66rem; font-weight:900; letter-spacing:.08em; }
+.visual-guide b { font-family:Georgia,serif; font-size:4.5rem; letter-spacing:.18em; }
+.guide-lines { width:62%; height:26px; border-top:2px solid #95d5ce; border-bottom:2px solid #95d5ce; }
+@media (max-width:760px) { .research-section { padding-bottom:68px; }.research-item { grid-template-columns:1fr; gap:25px; padding:20px; }.research-item.reverse .research-visual { order:0; }.research-visual { min-height:210px; } }
